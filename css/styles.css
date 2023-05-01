@@ -157,3 +157,15 @@ button {
     width: 150px;
     border-radius: 10px 20px 10px 20px;
 }
+.position-container{display: flex;
+justify-content: space-between;}
+.box{
+    width: 200px;
+    height: 200px;
+}
+.box1{background-color: red;}
+.box2{background-color: blue;
+position: relative;
+top: 50%;
+left: 50%;}
+.box3{background-color: green;}
