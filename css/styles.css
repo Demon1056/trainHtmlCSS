@@ -5,118 +5,155 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  text-align: center;
+    margin: 0;
+    text-align: center;
 }
 
 ul,
 ol {
-  margin: 0;
-  padding-left: 0;  
-list-style: none;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-.container{
+.container {
     width: 1030px;
     margin: 0 auto;
 }
-.section{
+
+.section {
     padding: 40px 0;
 }
 
-.list-section{
+.list-section {
     background-color: rgba(19, 48, 109, 0.555);
 }
- .hero{
+
+.hero {
     min-height: 500px;
     background-color: rgba(56, 11, 97, 0.212);
     background-image: url(/images/renault.jpg);
     background-size: contain;
     background-position: 50% 50%;
- }
- .par-section{  background-image: repeating-linear-gradient(45deg,
-    blue,
-    blue 20px,
-    yellow 20px,
-    red 20px,
-    yellow 40px
+}
 
-    );}
-.sumb{
+.par-section {
+    background-image: repeating-linear-gradient(45deg,
+            blue,
+            blue 20px,
+            yellow 20px,
+            red 20px,
+            yellow 40px);
+}
+
+.sumb {
     background-color: aqua;
     width: 250px;
     height: 250px;
     margin-bottom: 140px;
-    box-shadow: 10px 2px 15px 10px  rgb(209, 48, 48), 15px 7px 15px 15px  rgb(199, 76, 162);
-   
+    box-shadow: 10px 2px 15px 10px rgb(209, 48, 48), 15px 7px 15px 15px rgb(199, 76, 162);
+    background-image: url(/images/18978974de41e684aa5958025cf75c21.jpg);
+    /* background-size: contain; */
+    background-position: -65% -85%;
+    background-repeat: no-repeat;
+
 }
-.sumb-img{
+
+/* .sumb-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
-.psev-link{
-    display:block;
+.psev-link {
+    display: flex;
+    align-items: baseline;
     min-width: 25px;
     color: red;
     background-color: green;
     padding: 5px;
     border-radius: 20%;
+
 }
 
-.psev-link::before{
+.psev-link::before {
     content: "";
     display: block;
     width: 10px;
     height: 10px;
     background-color: blue;
+    margin-right: 120px;
 }
 
-.line-gradient{
-    min-height: 200px;
-    background-image:linear-gradient(
-        45deg,
-        #c64f4f83,
-        #c64f4f83   
-), url(/images/18978974de41e684aa5958025cf75c21.jpg);
-background-size: contain;
-
+.link-psev {
+    display: flex;
 }
-.radial{
+
+.radial {
     min-height: 200px;
     background-image: repeating-radial-gradient(circle at center,
-    #09792b,
-    #09792b 20px,
-    #00b9ff 20px,
-    #00b9ff 40px
+            #09792b,
+            #09792b 20px,
+            #00b9ff 20px,
+            #00b9ff 40px);
+}
 
-    );
+.tree {
+    fill: rgb(132, 0, 255);
 }
-.tree{
-    fill:rgb(132, 0, 255);
+
+.tree:hover {
+    fill: currentColor;
 }
-.tree:hover
-{
-    fill: #b32222;
+
+/* .top {
+    fill: currentColor;
 }
-.ua:hover .top{
+
+.bottom {
+    fill: currentColor;
+} */
+
+.ua:hover .top {
     fill: black;
 }
-.ua:hover .bottom{
+
+.ua:hover .bottom {
     fill: red;
+}
+
+.ua.ua:hover {
+    stroke: yellow;
+}
+
+.android {
+    fill: blue;
+    width: 100px;
+}
+
+.android:hover {
+    fill: green;
+    stroke: blue;
+    stroke-width: 0.5px;
+}
+
+.conection:hover {
+    fill: rgba(255, 0, 0, 0.201);
+    width: 150px;
+    border-radius: 10px 20px 10px 20px;
 }
