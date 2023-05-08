@@ -288,6 +288,46 @@ button {
 
 .box6 {
     background-color: rgb(178, 189, 19);
+}
 
+.container-form {
+    min-height: 30px;
+    background-color: #09792b;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 8px solid black;
+}
+
+textarea {
+    resize: none;
+}
+
+.data-time:in-range {
+    background-color: #160979;
+}
+
+.data-time:out-of-range {
+    background-color: red;
+
+}
+
+input:placeholder-shown {
+    background-color: brown;
+}
+
+label:focus-within {
+    font-size: large;
+    color: yellowgreen;
+}
+
+input::placeholder {
+    background-color: blueviolet;
 }

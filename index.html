@@ -26,7 +26,60 @@
                 <h1>Тестова сторінка</h1>
             </div>
         </div>
-        <div class="section list-section">
+        <div class="section container-form">
+            <div class="container"></div>
+            <h2>Form</h2>
+            <form name="train-form" autocomplete="off">
+                <label>Ім'я <input type="text" placeholder="Dmytro" autofocus required></label>
+                <label for="second-name">Прізвище</label>
+                <input disabled type="text" name="second-name" id="second-name" placeholder="Karvatskyi" />
+                <label>Email <input class="pass" type="email"></label>
+                <label for="password">Password
+                    <input class="pass" type="password" id="password" minlength="5" maxlength="6"></label>
+                <p>Favorite game</p>
+                <label> <input type="radio" name="game" value="football">Football</label>
+                <label> <input type="radio" name="game" value="bascketball">Bascketball</label>
+                <label> <input type="radio" name="game" value="valleyball" checked>Valleyball</label>
+                <p>Autorization</p>
+                <label for="auth">Do yuo agree</label>
+                <input type="checkbox" name="auth" id="auth" value="yes" checked>
+                <label for="age">How old are you</label>
+                <input type="number" id="age" name="age" min="0" max="150" step="0.1">
+                <label for="phone">You phone</label>
+                <input name="phone" id="phone" type="tel">
+                <label>Your IQ <input name="iq" type="range" min="60" max="200" step="10"></label>
+                <label for="date">What is date today</label><input type="date" name="date" id="date" min="2023-01-01"
+                    max="2023-05-08">
+                <label for="time">What time is it</label><input type="time" name="time" id="time">
+                <label>Data-time<input class="data-time" type="datetime-local" min="2023-01-01T06:00"
+                        max="2023-05-08T04:00" /></label>
+                <label for="opis">Coments</label> <textarea name="opis" id="opis" cols="30" rows="10"></textarea>
+                <label for="sel">Selction list</label>
+                <select name="information" id="sel">
+                    <optgroup label="Number">
+                        <option value="1">First</option>
+                        <option value="2">Second</option>
+                        <option value="3">third</option>
+                    </optgroup>
+                    <optgroup label="letter">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                    </optgroup>
+                </select>
+                <input list="names" name="names">
+                <datalist id="names">
+                    <option value="Dima">Dima</option>
+                    <option value="Gena">Gena</option>
+                    <option value="Yvan">Yvan</option>
+                    <option value="Masha">Masha</option>
+                </datalist>
+                <input type="file" name="file" id="file">
+                <button type="submit">Send the form
+                </button>
+            </form>
+        </div>
+        <div class=" section list-section">
             <div class="container">
                 <h2>Списки</h2>
                 <ul>
