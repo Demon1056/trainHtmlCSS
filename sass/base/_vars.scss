@@ -1,0 +1,13 @@
+:root {
+    --main-color: red
+}
+
+$secondary-color: black;
+
+@mixin booo ($x, $y) {
+    position: absolute;
+    top: $x;
+    left: $y;
+    width: 200px;
+    height: 200px;
+}

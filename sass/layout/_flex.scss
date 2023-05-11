@@ -1,0 +1,77 @@
+.position-container {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+    min-height: 100px;
+    overflow: auto;
+
+    .box1 {
+        background-color: red;
+        @include booo(10px, 20px);
+
+    }
+
+    .box2 {
+        background-color: blue;
+        @include booo(20px, 40px);
+    }
+
+    .box3 {
+        background-color: green;
+        @include booo(30px, 60px);
+    }
+}
+
+// .box {}
+
+
+.text {
+    color: white;
+    font-size: 30px;
+    z-index: 21;
+}
+
+
+
+.posit {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes {
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    &:hover::before {
+        display: block;
+
+    }
+}
+
+
+.boxes::before {
+    content: "цей текст, який не використовуємо";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+    display: none;
+}
+
+.box4 {
+    background-color: rgb(10, 12, 14);
+}
+
+.box5 {
+    background-color: rgb(39, 119, 189);
+}
+
+.box6 {
+    background-color: rgb(178, 189, 19);
+}

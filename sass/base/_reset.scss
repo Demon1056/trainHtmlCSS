@@ -1,0 +1,64 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-align: center;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+body {
+    background-color: $secondary-color;
+
+    @media screen and (min-width: 480px) {
+
+        background-color: yellow;
+    }
+
+    ;
+
+    @media screen and (min-width: 768px) {
+
+        background-color: grey;
+    }
+
+    ;
+
+    @media screen and (min-width: 1200px) {
+
+        background-color: blue;
+    }
+}
