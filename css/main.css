@@ -311,4 +311,15 @@ input::placeholder {
   fill: rgba(255, 0, 0, 0.201);
   width: 150px;
   border-radius: 10px 20px 10px 20px;
+}
+
+.section-image-adapt {
+  background-color: coral;
+}
+
+.tumb {
+  width: 270px;
+  height: 260px;
+  background-color: aqua;
+  border: 3px solid black;
 }/*# sourceMappingURL=main.css.map */
