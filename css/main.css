@@ -36,8 +36,9 @@ button {
 }
 
 .container {
-  width: 1030px;
+  max-width: 1030px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section {
@@ -318,8 +319,20 @@ input::placeholder {
 }
 
 .tumb {
-  width: 270px;
-  height: 260px;
   background-color: aqua;
   border: 3px solid black;
+  width: 270px;
+  height: 260px;
+  background-image: url("/images/foto.jpg");
+  background-size: 270px, 260px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .tumb {
+    background-image: url("/images/foto@2x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .tumb {
+    background-image: url("/images/foto@3x.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */
