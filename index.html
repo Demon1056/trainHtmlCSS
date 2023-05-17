@@ -220,13 +220,23 @@
     <div class="section section-image-adapt">
         <div class="container">
             <div class="tumb">
+                <picture>
+                    <source srcset="/images/fotow.webp 270w, 
+                    /images/fotow@2x.webp 540w, 
+                    /images/fotow@3x.webp 810w" type="image/webp" media="(min-width:700px)">
+                    <source srcset="/images/tyna.jpg 270w, 
+                    /images/tyna@2x.jpg 540w, 
+                    /images/tyna@3x.jpg 810w" type="image/jpeg" media="(max-width:699px)">
+                    <img src="/images/foto.jpg" alt="Ihor">
+                </picture>
             </div>
         </div>
     </div>
 
     </main>
     <footer>
-        <div class="container">Це футер</div>
+        <div class=" container">Це футер
+        </div>
     </footer>
 </body>
 
