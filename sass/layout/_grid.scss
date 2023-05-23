@@ -1,0 +1,43 @@
+.grid-container {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr) 1.5fr;
+    grid-gap: 10px;
+
+}
+
+.grid-item {
+
+    padding: 2vw;
+    text-align: center;
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.two {
+    background-color: grey;
+}
+
+.three {
+    background-color: violet;
+}
+
+.four {
+    background-color: green;
+}
+
+.five {
+    background-color: orangered;
+}
+
+.six {
+    background-color: white;
+}
+
+.seven {
+    background-color: yellow;
+}
