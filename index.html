@@ -15,251 +15,28 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-        <div class="container"> Хедер третьої сторінки
-            <a href="/index.html"> For main page</a>
-        </div>
-    </header>
-    <main>
-        <div class="section hero">
-            <div class="container">
-                <h1>Тестова сторінка</h1>
-            </div>
-        </div>
-        <div class="section container-form">
-            <div class="container"></div>
-            <h2>Form</h2>
-            <form name="train-form" autocomplete="off">
-                <label>Ім'я <input type="text" placeholder="Dmytro" autofocus required></label>
-                <label for="second-name">Прізвище</label>
-                <input disabled type="text" name="second-name" id="second-name" placeholder="Karvatskyi" />
-                <label>Email <input class="pass" type="email"></label>
-                <label for="password">Password
-                    <input class="pass" type="password" id="password" minlength="5" maxlength="6"></label>
-                <p>Favorite game</p>
-                <label> <input type="radio" name="game" value="football">Football</label>
-                <label> <input type="radio" name="game" value="bascketball">Bascketball</label>
-                <label> <input type="radio" name="game" value="valleyball" checked>Valleyball</label>
-                <p>Autorization</p>
-                <label for="auth">Do yuo agree</label>
-                <input type="checkbox" name="auth" id="auth" value="yes" checked>
-                <label for="age">How old are you</label>
-                <input type="number" id="age" name="age" min="0" max="150" step="0.1">
-                <label for="phone">You phone</label>
-                <input name="phone" id="phone" type="tel">
-                <label>Your IQ <input name="iq" type="range" min="60" max="200" step="10"></label>
-                <label for="date">What is date today</label><input type="date" name="date" id="date" min="2023-01-01"
-                    max="2023-05-08">
-                <label for="time">What time is it</label><input type="time" name="time" id="time">
-                <label>Data-time<input class="data-time" type="datetime-local" min="2023-01-01T06:00"
-                        max="2023-05-08T04:00" /></label>
-                <label for="opis">Coments</label> <textarea name="opis" id="opis" cols="30"
-                    rows="10">Я це написав- продовжте</textarea>
-                <label for="sel">Selction list</label>
-                <select name="information" id="sel">
-                    <optgroup label="Number">
-                        <option value="1">First</option>
-                        <option value="2">Second</option>
-                        <option value="3">third</option>
-                    </optgroup>
-                    <optgroup label="letter">
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="c">C</option>
-                    </optgroup>
-                </select>
-                <input list="names" name="names">
-                <datalist id="names">
-                    <option value="Dima">Dima</option>
-                    <option value="Gena">Gena</option>
-                    <option value="Yvan">Yvan</option>
-                    <option value="Masha">Masha</option>
-                </datalist>
-                <input type="file" name="file" id="file">
-                <button type="submit">Send the form
-                </button>
-            </form>
-        </div>
-        <div class=" section list-section">
-            <div class="container">
-                <h2>Списки</h2>
-                <ul>
-                    <li class="first">now number 1</li>
-                    <li>now number 2</li>
-                    <li>now number 3</li>
-                    <li>now number 4</li>
-                </ul>
-                <li class="item choose-item">number 1</li>
-                <li class="item choose-item">number 2</li>
-                <li class="item choose-item">number 3</li>
-                <li class="item">number 4</li>
-                <li class="item choose-item">number 5</li>
-                <li class="item">number 6</li>
-                <li class="item choose-item">number 7</li>
-                <li class="item choose-item">number 8</li>
-                <li class="item choose-item">number 9</li>
-                <li class="item choose-item">number 10</li>
-                </ol>
-                <ul class="flex-list">
-                    <li class="box one">
-                        <p> 1Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box two">
-                        <p> 2Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box three">
-                        <p> 3Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box four">
-                        <p>4Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box five">
-                        <p> 5Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box six">
-                        <p>6Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                    <li class="box seven">
-                        <p>7Lorem ipsum dolor
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis
-                            molestias eius earum at officia.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="section par-section">
-            <div class="container">
-                <h2>Абзаци</h2>
-                <div class="container"></div>
-                <p>Learn by example: cssreference.io is a free visual guide to CSS. It features the most popular
-                    properties,
-                    and explains them with illustrated and animated examples. cumque fuga facere labore quo id
-                    necessitatibus
-                    quaerat rerum.Obcaecati
-                    commodi, veritatis nihil alias iste odit similique sit eius optio veniam,
-                    impedit cumque fuga facere labore quo id necessitatibus quaerat rerum.</p>
-                <p>Learn by example: cssreference.io is a free visual guide to CSS. It features the most popular
-                    properties,
-                    and explains them with illustrated and animated examples. cumque fuga facere labore quo id
-                    necessitatibus
-                    quaerat rerum.Obcaecati
-                    commodi, veritatis nihil alias iste odit similique sit eius optio veniam,
-                    impedit cumque fuga facere labore quo id necessitatibus quaerat rerum.</p>
-                <p class="wirsh">
-                    Прийшла холодная програ
-                    Ха-Ха Ха-Ха
-                    А ми чеакємо весну
-                    Ху-Ху Ху-Ху</p>
-                <div class="parent">
-                    <div class="child"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="container">
-                <h2>Картинки</h2>
-                <div class="bgb">
-                    <div class="sumb"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 17 17" class="tree">
-                        <path
-                            d="M14.755 14.006l-2.536-3.381H13.283a.531.531 0 0 0 .41-.869l-2.536-3.381h1.063a.532.532 0 0 0 .415-.863L8.385.199a.53.53 0 0 0-.83 0l-4.25 5.313a.531.531 0 0 0 .415.863h1.063l-2.55 3.4a.53.53 0 0 0 .425.85h1.063l-2.55 3.4a.53.53 0 0 0 .425.85h4.781v1.594c0 .293.238.531.531.531h2.125a.531.531 0 0 0 .531-.531v-1.594h4.782a.531.531 0 0 0 .41-.869z" />
-                    </svg><svg class="ua" xmlns="http://www.w3.org/2000/svg" stroke="red" stroke-width="8" width="100"
-                        viewBox="0 0 301 201">
-                        <g fill="none">
-                            <path class="top" fill="#005BBB" d="M.5.5h300v200H.5z" />
-                            <path class="bottom" fill="#FFD500" d="M.5 100.5h300v100H.5z" />
-                        </g>
-                    </svg>
-                    <svg class="android">
-                        <use href="/images/ss.svg#icon-android"></use>
-                    </svg>
-                    <svg class="conection">
-                        <use href="/images/ss.svg#icon-connection"></use>
-                    </svg>
-                </div>
-                <a href="https://fightnews.info/" class="psev-link" target="_blank">FOR-BOX</a>
-                <div class="line-gradient"></div>
-                <div class="radial"></div>
-            </div>
-        </div>
-        </div>
-        <div class="section">
-
-            <div class="container">
-
-                <div class="position-container">
-                    <p class="text">red</p>
-                    <p class="text">blue</p>
-                    <p class="text">green</p>
-                    <div class="box box1"></div>
-                    <div class="box box2"></div>
-                    <div class="box box3"></div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container posit">
-                <div class="boxes box4"></div>
-                <div class="boxes box5"></div>
-                <div class="boxes box6"></div>
-            </div>
-        </div> -->
-    <div class="section section-image-adapt">
-        <div class="container">
-            <div class="tumb">
-                <picture>
-                    <source srcset="/images/fotow.webp 270w, 
-                    /images/fotow@2x.webp 540w, 
-                    /images/fotow@3x.webp 810w" type="image/webp" media="(min-width:700px)">
-                    <source srcset="/images/tyna.jpg 270w, 
-                    /images/tyna@2x.jpg 540w, 
-                    /images/tyna@3x.jpg 810w" type="image/jpeg" media="(max-width:699px)">
-                    <img src="/images/foto.jpg" alt="Ihor">
-                </picture>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="container">
-            <div class="grid-container">
-                <div class="grid-item one">1</div>
-                <div class="grid-item two">2</div>
-                <div class="grid-item three">3</div>
-                <div class="grid-item four">4</div>
-                <div class="grid-item five">5</div>
-                <div class="grid-item six">6</div>
-                <div class="grid-item seven">7</div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="container">
-            <div class="second-grid-container">
-                <div class="second-grid-item headerd">HEADER</div>
-                <div class="second-grid-item left-sidebar">L_SIDEBAR</div>
-                <div class="second-grid-item main">MAIN</div>
-                <div class="second-grid-item right-sidebar">RIGHT_SiDEBAR</div>
-                <div class="second-grid-item footer">FOOTER</div>
-            </div>
-        </div>
-        </main>
-        <footer>
-            <div class=" container">Це футер
-            </div>
-        </footer>
+   <header class="header">HEADER</header>
+   <main class="main">
+   <aside class="left-aside">LEFT-ASIDE</aside>
+   <nav class="nav">NAVIGATION</nav>
+   <aside class="right-aside">RIGHT-ASIDE</aside>
+   <section class="section">SECTION
+<ul class="list">
+    <li class="item item1">1</li>
+    <li class="item item2">2</li>
+    <li class="item item3">3</li>
+    <li class="item item4">4</li>
+    <li class="item item5">5</li>
+    <li class="item item6">6</li>
+    <li class="item item7">7</li>
+    <li class="item item8">8</li>
+    <li class="item item9">9</li>
+    <li class="item item9">9</li>
+    <li class="item item9">9</li>
+</ul>
+   </section>
+</main>
+   <footer class="footer">FOOTER</footer>
 </body>
 
 </html>

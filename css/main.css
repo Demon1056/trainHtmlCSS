@@ -41,27 +41,97 @@ button {
   padding: 0 20px;
 }
 
-.section {
-  padding: 40px 0;
+body {
+  background-color: blue;
 }
 
-body {
-  background-color: black;
+.header {
+  height: 150px;
+  background-color: red;
 }
-@media screen and (min-width: 480px) {
-  body {
-    background-color: yellow;
+
+.left-aside {
+  grid-area: left-aside;
+  background-color: orange;
+}
+@media screen and (max-width: 767.5px) {
+  .left-aside {
+    display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  body {
-    background-color: grey;
+
+.right-aside {
+  grid-area: right-aside;
+  background-color: yellow;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: yellowgreen;
+}
+
+section {
+  grid-area: section;
+  background-color: green;
+}
+
+.footer {
+  height: 100px;
+  background-color: violet;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "left-aside nav right-aside" "left-aside section right-aside";
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 200px 1fr 150px;
+}
+@media screen and (max-width: 767.5px) {
+  .main {
+    grid-template-areas: "nav right-aside" "section right-aside";
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: 1fr 75px;
   }
 }
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: blue;
-  }
+
+.list {
+  padding: 20px;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-columns: 2fr;
+}
+
+.item {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
 }
 
 .container-form {
@@ -105,13 +175,6 @@ input::placeholder {
   background-color: blueviolet;
   color: #09792b;
   font-size: 34px;
-}
-
-.header {
-  margin: 0 auto;
-  position: fixed;
-  background-color: aquamarine;
-  bottom: 0px;
 }
 
 .hero {
@@ -325,76 +388,18 @@ input::placeholder {
   height: 260px;
 }
 
-.grid-container {
-  background-color: red;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr) 3fr;
-  grid-gap: 0.5vw;
+.table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.grid-item {
-  padding: 2vw;
+.caption {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+tr, td, th {
+  border: 2px solid green;
   text-align: center;
-}
-
-.one {
-  background-color: black;
-  color: white;
-}
-
-.two {
-  background-color: grey;
-}
-
-.three {
-  background-color: violet;
-}
-
-.four {
-  background-color: green;
-}
-
-.five {
-  background-color: orangered;
-}
-
-.six {
-  background-color: white;
-}
-
-.seven {
-  background-color: yellow;
-}
-
-.second-grid-container {
-  background-color: rosybrown;
-  display: grid;
-  grid-template: "headerd headerd headerd" 60px "left-sidebar main right-sidebar" 95vh "footer footer footer" 60px/10% 1fr 25%;
-  grid-gap: 1vw;
-}
-
-.headerd {
-  grid-area: headerd;
-  background-color: white;
-}
-
-.right-sidebar {
-  grid-area: right-sidebar;
-  background-color: green;
-}
-
-.left-sidebar {
-  grid-area: left-sidebar;
-  background-color: yellow;
-}
-
-.main {
-  grid-area: main;
-  background-color: red;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: grey;
 }/*# sourceMappingURL=main.css.map */

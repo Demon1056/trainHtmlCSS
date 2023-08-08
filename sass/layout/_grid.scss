@@ -1,83 +1,14 @@
-.grid-container {
-    background-color: red;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr) 3fr;
-    grid-gap: 0.5vw;
-
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.caption{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.grid-item {
-
-    padding: 2vw;
+tr , td, th{
+    border: 2px solid green;
     text-align: center;
-}
-
-.one {
-    background-color: black;
-    color: white;
-}
-
-.two {
-    background-color: grey;
-}
-
-.three {
-    background-color: violet;
-}
-
-.four {
-    background-color: green;
-}
-
-.five {
-    background-color: orangered;
-}
-
-.six {
-    background-color: white;
-}
-
-.seven {
-    background-color: yellow;
-
-}
-
-.second-grid-container {
-    background-color: rosybrown;
-    display: grid;
-    grid-template:
-        "headerd headerd headerd" 60px
-        "left-sidebar main right-sidebar" 95vh
-        "footer footer footer" 60px
-        /10% 1fr 25%;
-    // grid-template-columns: 10% 1fr 25%;
-    // grid-template-rows: 60px 95vh 60px;
-    grid-gap: 1vw;
-}
-
-.headerd {
-    grid-area: headerd;
-    background-color: white;
-
-}
-
-.right-sidebar {
-    grid-area: right-sidebar;
-    background-color: green;
-}
-
-.left-sidebar {
-    grid-area: left-sidebar;
-    background-color: yellow;
-}
-
-.main {
-    grid-area: main;
-    background-color: red;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: grey;
 }
