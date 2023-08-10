@@ -1,4 +1,7 @@
+let a=0;
 
-"use strict";
-
-console.log(-1&&5&&-8&&7);
+do {
+    console.log(a);
+    a+=2
+    
+} while (a<17);
