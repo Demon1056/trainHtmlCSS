@@ -1,7 +1,5 @@
-let a=0;
-
-do {
-    console.log(a);
-    a+=2
-    
-} while (a<17);
+const array = ['a', 'b', 'c']
+console.log(array);
+const newArray = array.push('d', 'e')
+console.log(newArray);
+console.log(array);
