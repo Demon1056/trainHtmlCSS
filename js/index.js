@@ -1,5 +1,5 @@
-const array = ['a', 'b', 'c']
-console.log(array);
-const newArray = array.push('d', 'e')
-console.log(newArray);
-console.log(array);
+const art = [4,1,2,3,];
+
+const newAr =art.unshift(2, ['a', 'b'], 8, 9)
+console.log(art);
+console.log(newAr);
